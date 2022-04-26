@@ -1,0 +1,23 @@
+.neonText {
+  font-family: "Yellowtail", cursive;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 19px #fff, 0 0 30px rgb(255, 187, 0),
+      0 0 50px rgb(255, 187, 0), 0 0 70px rgb(255, 187, 0),
+      0 0 90px rgb(255, 187, 0);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
