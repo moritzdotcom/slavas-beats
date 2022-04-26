@@ -105,6 +105,7 @@ export default function NftCard(props) {
             {paused ? <AiFillPlayCircle /> : <AiFillPauseCircle />}
           </a>
           <video
+            playsInline
             ref={videoElement}
             src={nft.animation_url}
             style={{
